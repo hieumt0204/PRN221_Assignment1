@@ -86,9 +86,11 @@
                                     
                                 </GridView>
                             </ListView.View>
+                            
                         </ListView>
                     </StackPanel>
                 </ScrollViewer>
+                <TextBox Text="Author: Nguyen Tan Dung" VerticalAlignment="Bottom"></TextBox>
             </Grid>
         </Border>
     </Border>

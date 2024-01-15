@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Session2"
         mc:Ignorable="d"
-        Title="MemberWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="MemberWindow" Height="500" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -14,6 +14,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"></RowDefinition>
             <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Background="LightBlue">
             <Label Content="Order Date"></Label>
@@ -31,6 +32,7 @@
                 <Button x:Name="btnDelete" Content="Delete" Width="50" Margin="10" Click="btnDelete_Click"></Button>
             </StackPanel>
         </StackPanel>
+      
         <ListView Grid.Row="0" Grid.Column="1" x:Name="listOrder" SelectionChanged="listOrder_SelectionChanged">
             <ListView.View>
                 <GridView>
@@ -42,6 +44,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" Background="LightBlue">
             <Label Content="Product Name" ></Label>
             <ComboBox x:Name="cboProductId"
@@ -83,5 +86,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBox Grid.Row="3" Text="Author : Dong Xuan Viet"></TextBox>
     </Grid>
 </Window>

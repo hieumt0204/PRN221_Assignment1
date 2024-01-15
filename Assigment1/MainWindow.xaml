@@ -14,13 +14,15 @@
             <MenuItem Name="mnuMember" Height="40" FontSize="15" Header="Member" Click="mnuMember_Click"></MenuItem>
             <MenuItem Name="mnuOrderReport" Height="40" FontSize="15" Header="Order Report" Click="mnuOrderReport_Click" ></MenuItem>
             <MenuItem Name="mnuLogin" Height="40" FontSize="15" Header="Login" Click="mnuLogin_Click"></MenuItem>
+            <Grid DockPanel.Dock="Bottom">
+                <Image Source="/Images/main.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="354"/>
+
+            </Grid>
+
         </Menu>
+       
+        <TextBox DockPanel.Dock="Bottom" Text="Author: Mai Trong Hieu - Group 1"></TextBox>
 
-        <Grid DockPanel.Dock="Bottom">
-            <Image Source="/Images/main.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Grid>
-
-        <TextBox DockPanel.Dock="Bottom" Text="Author Group1"></TextBox>
     </DockPanel>
 
 </Window>

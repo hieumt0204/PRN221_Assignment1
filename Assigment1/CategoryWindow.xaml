@@ -11,6 +11,7 @@
             <RowDefinition Height="5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Vertical" Background="LightBlue">
             <Label Content="Category Name" Height="30"></Label>
@@ -33,5 +34,12 @@
             </ListView.View>
 
         </ListView>
+        <Grid DockPanel.Dock="Bottom">
+            <Image Source="/Images/main.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="354"/>
+
+        </Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="3">
+            <TextBox Text="Author: Mai Trong Hieu" ></TextBox>
+        </StackPanel>
     </Grid>
 </Window>

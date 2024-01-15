@@ -72,7 +72,11 @@
                                FontWeight="Medium" FontFamily="Montserrat" HorizontalAlignment="Center"
                                Margin="0,30,0,0"/>
                 </StackPanel>
+                <TextBox Text="Author: Mai Trong Hieu" VerticalAlignment="Bottom"></TextBox>
             </Grid>
+           
+
         </Border>
+        
     </Border>
 </Window>

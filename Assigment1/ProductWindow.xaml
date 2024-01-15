@@ -57,12 +57,16 @@
                        Text="{Binding Path=UnitInStock, Mode=OneWay}"
                        DataContext="{Binding ElementName=ListProduct, Path=SelectedItem}">
             </TextBox>
+            
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
             <Button x:Name="btnInsert" Margin="10" Width="80" Content="Insert" Click="btnInsert_Click"></Button>
             <Button x:Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="btnUpdate_Click"></Button>
             <Button x:Name="btnDelete" Margin="10" Width="80" Content="Delete" Click="btnDelete_Click"></Button>
             
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <TextBox Text="Author: Nguyen Lan Anh" VerticalAlignment="Bottom" Width="300"  ></TextBox>
         </StackPanel>
         <ListView Grid.Row="1" Grid.Column="1" x:Name="ListProduct">
             <ListView.View>
@@ -76,5 +80,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        
     </Grid>
 </Window>
